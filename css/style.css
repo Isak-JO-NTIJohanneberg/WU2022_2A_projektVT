@@ -1,0 +1,51 @@
+#wrapper{
+
+display: grid;
+
+grid-template-areas: 
+"lo"
+"na"
+"ma"
+;
+
+grid-template-rows: 5rem 3rem 1fr;
+
+height: 175vh;
+
+
+
+
+}
+
+
+nav{
+    height: 100px;
+    grid-area: na;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#logga{
+    grid-area: lo;
+    height: 400px;
+}
+
+#main{
+
+    grid-area: ma;
+}
+
+.lank{
+height: 50px;
+    
+    align-items: center;
+}
+
+.link{
+    height: 60px;
+    width: 150px;
+    background-color: antiquewhite;
+}
