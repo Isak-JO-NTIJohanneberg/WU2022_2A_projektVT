@@ -1,14 +1,22 @@
+body{
+    margin: 0; 
+
+    //*utan den här får man den jobbiga scroll åt sidorna.*//
+
+}
+
 #wrapper{
 
 display: grid;
 
 grid-template-areas: 
-"lo"
-"na"
-"ma"
+"lo bg"
+"na na"
+"ma ma"
 ;
 
-grid-template-rows: 5rem 4.5rem 1fr;
+grid-template-rows: 8vw 4.5rem 1fr;
+grid-template-columns: 1fr 100px;
 //*
 grid-template-rows: 5rem 3rem 1fr;*//
 
@@ -17,45 +25,108 @@ height: 175vh;
 
 
 
-}
-
-
-nav{
-
-    grid-area: na;
-
-    display: flex;
-    align-items: center;   
-    width: 100vw;
-
-    
-    justify-content: space-evenly;
-    align-items: center;
-    
-    margin: 0;
-    margin-right: 0px;
-    padding: 0;
-    border: 0;
-    background-color: azure;
-
-    //*
-    height: 100px;
-    grid-area: na;
-
- 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-*//
-
-    
 
 }
+
+@media screen and (max-width: 800px){
+   //* #navmeny{
+    display: none;}*//
+//*
+    nav{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 60px;
+        height: 90vh;
+    
+        background-color: aquamarine;
+        text-decoration: none;
+        position: absolute;
+        right: 0;
+        top: 0vh;
+     
+    }*//
+    nav{
+
+        
+        position: absolute;
+        right: 0;
+        
+        top: 0vh;
+  
+        
+        }
+
+}   
+
+@media screen and (min-width: 801px){
+    #burgare{
+    display: none;}
+    
+    #wrapper{
+        grid-template-columns: 1fr 0px;
+    }
+
+    nav{
+
+        grid-area: na;
+    
+        display: flex;
+        align-items: center;   
+        width: 100vw;
+    
+        
+        justify-content: space-evenly;
+        align-items: center;
+        
+        margin: 0;
+        margin-right: 0px;
+        padding: 0;
+        border: 0;
+        background-color: azure;
+    
+        //*
+        height: 100px;
+        grid-area: na;
+    
+     
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    *//
+    
+    
+    
+    }
+
+}  
+
+#burgare{
+    grid-area: bg;
+   
+    margin-top: 2.5vw;
+
+   
+}
+
+.linje{
+    height: 4px;
+    width: 35px;
+    background-color: chartreuse;
+    margin: 7px;
+    border-radius: 30%;
+    transition: all 0.5s;
+    }
+
+
 
 #logga{
     grid-area: lo;
-    height: 400px;
+    
+    background-image: url(../img/trest_logga.png)
 }
 
 #main{
@@ -102,3 +173,5 @@ p{
 a{
    
 }
+
+//* cursor på länkar*//
