@@ -3,10 +3,12 @@ body{
 
     //*utan den här får man den jobbiga scroll åt sidorna.*//
 
+
+
 }
 
 #wrapper{
-
+  
 display: grid;
 
 grid-template-areas: 
@@ -14,14 +16,18 @@ grid-template-areas:
 "na na"
 "ma ma"
 ;
+height: 200vh;
+
 
 grid-template-rows: 8vw 4.5rem 1fr;
 grid-template-columns: 1fr 100px;
+
+
 //*
 grid-template-rows: 5rem 3rem 1fr;*//
 
-height: 175vh;
 
+//*fel ordnig i height blir fel, kommentaren kunde visst inte vara i koden heller.*//
 
 
 
@@ -29,35 +35,59 @@ height: 175vh;
 }
 
 @media screen and (max-width: 800px){
-   //* #navmeny{
-    display: none;}*//
-//*
-    nav{
+    #wrapper{
+        grid-template-rows: 8vw 0px 1fr;
+    }
 
+    nav{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        width: 60px;
-        height: 90vh;
+        width: 150px;
+        height: 22.5rem;
     
-        background-color: aquamarine;
+        /*background-color: aquamarine;*/
         text-decoration: none;
         position: absolute;
         right: 0;
-        top: 0vh;
-     
-    }*//
-    nav{
+        top: 8vw;
+      
+        
 
-        
-        position: absolute;
-        right: 0;
-        
-        top: 0vh;
+
+
   
         
-        }
+    }
+
+    #burgarbehållare{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    #burgare{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 32px;
+        
+        grid-area: bg;
+       
+        /*margin-top: 2.5vw;*/
+    
+       
+    }
+    .nav_upp{
+        transform: translateY(-22.5rem);
+    }
+    
 
 }   
 
@@ -75,7 +105,7 @@ height: 175vh;
     
         display: flex;
         align-items: center;   
-        width: 100vw;
+        /*width: 90vw;*/
     
         
         justify-content: space-evenly;
@@ -86,6 +116,10 @@ height: 175vh;
         padding: 0;
         border: 0;
         background-color: azure;
+
+        position: sticky;
+
+        top: 0px;
     
         //*
         height: 100px;
@@ -104,19 +138,13 @@ height: 175vh;
 
 }  
 
-#burgare{
-    grid-area: bg;
-   
-    margin-top: 2.5vw;
 
-   
-}
 
 .linje{
-    height: 4px;
+    height: 6px;
     width: 35px;
     background-color: chartreuse;
-    margin: 7px;
+    /*margin: 7px;*/
     border-radius: 30%;
     transition: all 0.5s;
     }
@@ -175,3 +203,29 @@ a{
 }
 
 //* cursor på länkar*//
+
+
+//* position absulute
+position sticky 
+z index*//
+
+
+   //* #navmeny{
+    display: none;}*//
+//*
+    nav{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 60px;
+        height: 90vh;
+    
+        background-color: aquamarine;
+        text-decoration: none;
+        position: absolute;
+        right: 0;
+        top: 0vh;
+     
+    }*//
