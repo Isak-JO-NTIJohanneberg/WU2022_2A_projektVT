@@ -50,16 +50,21 @@ grid-template-rows: 5rem 3rem 1fr;*//
         /*background-color: aquamarine;*/
         text-decoration: none;
         position: absolute;
-        right: 0;
+        right: -150px;
         top: 8vw;
-      
-        
-
-
-
+        transition: 0.35s;
   
         
     }
+
+
+    .nav-active {
+        transform: translateX(-165px);
+    }
+
+    /*.nav_upp{
+     transform: translateY(-22.5rem);
+    }*/
 
     #burgarbehållare{
         display: flex;
@@ -84,8 +89,19 @@ grid-template-rows: 5rem 3rem 1fr;*//
     
        
     }
-    .nav_upp{
-        transform: translateY(-22.5rem);
+    
+    .kryss #line2{
+        opacity: 0;
+    
+    }
+    
+    .kryss #line1{
+        transform: rotate(-45deg) translate(-9px, 9px);
+    
+    }
+    
+    .kryss #line3{
+        transform: rotate(45deg) translate(-9px, -9px);
     }
     
 
@@ -178,6 +194,13 @@ grid-template-rows: 5rem 3rem 1fr;*//
     background-color: antiquewhite;
     height: 60px;
 }
+
+#undermeny{
+    display: none;
+}
+
+
+
 //*
 .link{
     //*
