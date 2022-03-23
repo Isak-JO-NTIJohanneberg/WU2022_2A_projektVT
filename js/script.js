@@ -15,6 +15,7 @@ const undermeny = document.getElementById('undermeny')
 const maskiner = document.getElementById('maskiner')
 
 function toggleMenu2() {
+    //nav.classList.toggle('nav-active')
    undermeny.classList.toggle('open-unermeny')
 }
 

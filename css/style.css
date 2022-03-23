@@ -7,6 +7,7 @@ body{
 
 }
 
+
 #wrapper{
   
 display: grid;
@@ -155,7 +156,6 @@ grid-template-rows: 5rem 3rem 1fr;*//
 }  
 
 
-
 .linje{
     height: 6px;
     width: 35px;
@@ -176,6 +176,41 @@ grid-template-rows: 5rem 3rem 1fr;*//
 #main{
 
     grid-area: ma;
+    color: white;
+    background-image: url(/img/cnc-mill.jpg);
+    background-size: cover;
+
+    display: grid;
+
+    grid-template-areas: 
+    "art1 svets"
+    "delar art2"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  
+
+}
+
+#art1{
+    grid-area: art1;
+    margin: 50px;
+}
+
+#art2{
+    grid-area: art2;
+    margin: 50px;
+}
+
+.bilder_i_main{
+/*width: auto;
+height: 60vh;*/
+margin: 50px;
+object-fit: cover;
+width: fit-content;
+border-radius: 15px;  
+height: 60vh;
 }
 
 .lank{
@@ -189,16 +224,37 @@ grid-template-rows: 5rem 3rem 1fr;*//
     border-radius: 20px;
     border: 0;
     align-items: center;
-
+    text-decoration: none;
     width: 150px;
     background-color: antiquewhite;
     height: 60px;
+    
+    
 }
+
+.lank:hover .link{
+
+cursor: progress;
+
+    font-weight: 850;
+}   
+
+
+
+.link{
+
+    font-weight: 700;
+}
+
+
 
 #undermeny{
     display: none;
+   
 }
-
+.underlank{
+    display: none;
+}
 
 
 //*
