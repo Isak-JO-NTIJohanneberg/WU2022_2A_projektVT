@@ -6,7 +6,10 @@ function toggleMenu() {
     burger.classList.toggle('kryss')
 }
 
-burger.addEventListener('mouseover', toggleMenu)
+burger.addEventListener('click', toggleMenu)
+
+
+//'mouseover'
 
 
 

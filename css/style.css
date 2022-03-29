@@ -16,6 +16,7 @@ grid-template-areas:
 "lo bg"
 "na na"
 "ma ma"
+"fo fo"
 ;
 height: 200vh;
 
@@ -71,7 +72,7 @@ grid-template-rows: 5rem 3rem 1fr;*//
         display: flex;
         justify-content: center;
         align-items: center;
-
+        background-color: azure;
 
     }
 
@@ -86,6 +87,7 @@ grid-template-rows: 5rem 3rem 1fr;*//
         
         grid-area: bg;
        
+        
         /*margin-top: 2.5vw;*/
     
        
@@ -104,7 +106,27 @@ grid-template-rows: 5rem 3rem 1fr;*//
     .kryss #line3{
         transform: rotate(45deg) translate(-9px, -9px);
     }
+    #logga-bild{
+        height: 8vw;
+    }
     
+    #main{
+        grid-area: ma;
+        color: white;
+        background-image: url(/img/cnc-mill_skalad.png);
+        background-size: cover;
+    
+        display: grid;
+        grid-template-areas: 
+        "art1"
+        "svets"
+        "art2"
+        "delar"
+        ;
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.75fr 1fr 0.75fr;
+    }
 
 }   
 
@@ -152,6 +174,25 @@ grid-template-rows: 5rem 3rem 1fr;*//
     
     
     }
+    #main{
+
+        grid-area: ma;
+        color: white;
+        background-image: url(/img/cnc-mill_skalad.png);
+        background-size: cover;
+    
+        display: grid;
+    
+        grid-template-areas: 
+        "art1 svets"
+        "delar art2"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    
+      
+    
+    }
 
 }  
 
@@ -159,7 +200,7 @@ grid-template-rows: 5rem 3rem 1fr;*//
 .linje{
     height: 6px;
     width: 35px;
-    background-color: chartreuse;
+    background-color: orange;
     /*margin: 7px;*/
     border-radius: 30%;
     transition: all 0.5s;
@@ -170,28 +211,13 @@ grid-template-rows: 5rem 3rem 1fr;*//
 #logga{
     grid-area: lo;
     
-    background-image: url(../img/trest_logga.png)
-}
-
-#main{
-
-    grid-area: ma;
-    color: white;
-    background-image: url(/img/cnc-mill.jpg);
-    background-size: cover;
-
-    display: grid;
-
-    grid-template-areas: 
-    "art1 svets"
-    "delar art2"
-    ;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-  
 
 }
+#logga-bild{
+    width: 100%;
+}
+
+
 
 #art1{
     grid-area: art1;
@@ -206,9 +232,11 @@ grid-template-rows: 5rem 3rem 1fr;*//
 .bilder_i_main{
 /*width: auto;
 height: 60vh;*/
-margin: 50px;
+margin: 0px;
+
 object-fit: cover;
-width: fit-content;
+/*width: fit-content;*/
+width: 100%;
 border-radius: 15px;  
 height: 60vh;
 }
@@ -234,9 +262,13 @@ height: 60vh;
 
 .lank:hover .link{
 
-cursor: progress;
+
 
     font-weight: 850;
+    color: darkred;
+
+
+   /* cursor: progress;*/
 }   
 
 
@@ -244,9 +276,20 @@ cursor: progress;
 .link{
 
     font-weight: 700;
+    color: crimson;
 }
 
+footer{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    grid-area: fo;
+    height: auto;
 
+}
 
 #undermeny{
     display: none;
