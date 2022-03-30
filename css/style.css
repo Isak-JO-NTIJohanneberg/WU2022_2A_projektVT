@@ -1,7 +1,10 @@
 body{
     margin: 0; 
 
-    //*utan den här får man den jobbiga scroll åt sidorna.*//
+    max-width: 100%;
+    overflow-x: hidden;
+
+    /*utan den här får man den jobbiga scroll åt sidorna.*/
 
 
 
@@ -25,11 +28,11 @@ grid-template-rows: 8vw 4.5rem 1fr;
 grid-template-columns: 1fr 100px;
 
 
-//*
-grid-template-rows: 5rem 3rem 1fr;*//
+/*
+grid-template-rows: 5rem 3rem 1fr;*/
 
 
-//*fel ordnig i height blir fel, kommentaren kunde visst inte vara i koden heller.*//
+/*fel ordnig i height blir fel, kommentaren kunde visst inte vara i koden heller.*/
 
 
 
@@ -53,7 +56,7 @@ grid-template-rows: 5rem 3rem 1fr;*//
         text-decoration: none;
         position: absolute;
         right: -150px;
-        top: 8vw;
+        top: 9vw;
         transition: 0.35s;
   
         
@@ -113,11 +116,12 @@ grid-template-rows: 5rem 3rem 1fr;*//
     #main{
         grid-area: ma;
         color: white;
-        background-image: url(/img/cnc-mill_skalad.png);
+        background-image: url(../img/cnc-mill_skalad.png);
         background-size: cover;
     
         display: grid;
         grid-template-areas: 
+        "hr"
         "art1"
         "svets"
         "art2"
@@ -125,7 +129,30 @@ grid-template-rows: 5rem 3rem 1fr;*//
         ;
         
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.75fr 1fr 0.75fr;
+        grid-template-rows: 2rem 0.5fr 0.75fr 1fr 0.75fr;
+        font-size: 1.05rem;
+    }
+
+    #main_maskin{
+        grid-area: ma;
+        color: white;
+        background-image: url(../img/cnc-mill_skalad.png);
+        background-size: cover;
+    
+        display: grid;
+        grid-template-areas: 
+        "hr"
+        "art1"
+        "svarv"
+        "art2"
+        "cnc"
+        "art3"
+        "kipphyvel"
+        ;
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 2rem 0.5fr 0.75fr 0.5fr 0.75fr 0.5fr 0.75fr;
+        font-size: 1.05rem;
     }
 
 }   
@@ -160,7 +187,7 @@ grid-template-rows: 5rem 3rem 1fr;*//
 
         top: 0px;
     
-        //*
+        /*
         height: 100px;
         grid-area: na;
     
@@ -169,7 +196,7 @@ grid-template-rows: 5rem 3rem 1fr;*//
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-    *//
+    */
     
     
     
@@ -178,29 +205,61 @@ grid-template-rows: 5rem 3rem 1fr;*//
 
         grid-area: ma;
         color: white;
-        background-image: url(/img/cnc-mill_skalad.png);
+        background-image: url(../img/cnc-mill_skalad.png);
         background-size: cover;
     
         display: grid;
     
-        grid-template-areas: 
+        grid-template-areas:
+        "hr hr" 
         "art1 svets"
         "delar art2"
         ;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 2rem 1fr 1fr;
     
-      
+        font-size: 1.05rem;
+    
+    }
+
+    #main_maskin{
+
+        grid-area: ma;
+        color: white;
+        background-image: url(../img/cnc-mill_skalad.png);
+        background-size: cover;
+    
+        display: grid;
+    
+        grid-template-areas:
+        "hr hr" 
+        "art1 svarv"
+        "art2 cnc"
+        "art3 kipphyvel"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2rem 1fr 1fr 1fr;
+    
+        font-size: 1.05rem;
     
     }
 
 }  
 
+h1{
+    font-family: sans-serif;
+}
+h2{
+    font-family: sans-serif;
+}
+h3{
+    font-family: sans-serif;
+}
 
 .linje{
     height: 6px;
     width: 35px;
-    background-color: orange;
+    background-color: crimson;
     /*margin: 7px;*/
     border-radius: 30%;
     transition: all 0.5s;
@@ -229,6 +288,11 @@ grid-template-rows: 5rem 3rem 1fr;*//
     margin: 50px;
 }
 
+#art3{
+    grid-area: art3;
+    margin: 50px;
+}
+
 .bilder_i_main{
 /*width: auto;
 height: 60vh;*/
@@ -241,11 +305,38 @@ border-radius: 15px;
 height: 60vh;
 }
 
-.lank{
-   //* height: 50px;
-    
-    align-items: center;*//
+.bildbehallare1{
+    grid-area: svets;
+    margin: 50px;
+}
 
+.bildbehallare2{
+    grid-area: delar;
+    margin: 50px;
+}
+
+.bildbehallare3{
+    margin: 50px;
+}
+
+#svarv-bild{
+    grid-area: svarv;
+}
+
+#cnc-bild{
+    grid-area: cnc;
+}
+
+#kipp-bild{
+    grid-area: kipphyvel;
+}
+
+
+.lank{
+   /* height: 50px;
+    
+    align-items: center;*/
+    /*transition: all: 0.5s;*/
     height: 100px;
     display: flex;
     justify-content: center;
@@ -256,6 +347,7 @@ height: 60vh;
     width: 150px;
     background-color: antiquewhite;
     height: 60px;
+    
     
     
 }
@@ -271,12 +363,18 @@ height: 60vh;
    /* cursor: progress;*/
 }   
 
+.lank:hover{
+background-color: seashell;
+
+}
+
+
 
 
 .link{
-
+    font-family: sans-serif;
     font-weight: 700;
-    color: crimson;
+    color: darkblue;
 }
 
 footer{
@@ -299,10 +397,16 @@ footer{
     display: none;
 }
 
+#huvudrubrik{
+    grid-area: hr;
+    display: flex;
+    justify-content: center;
+}
 
-//*
+
+/*
 .link{
-    //*
+    /*
     display: flex;
     justify-content: center;
     border-radius: 20px;
@@ -310,10 +414,10 @@ footer{
     align-items: center;
    height: 60px;
     width: 150px;
-    background-color: antiquewhite;*//
+    background-color: antiquewhite;
     height: 130px;
 }   
-*//
+*/
 
 p{
     display: inline;
@@ -324,17 +428,17 @@ a{
    
 }
 
-//* cursor på länkar*//
+/* cursor på länkar*/
 
 
-//* position absulute
+/* position absulute
 position sticky 
-z index*//
+z index*/
 
 
-   //* #navmeny{
-    display: none;}*//
-//*
+   /* #navmeny{
+    display: none;}*/
+/*
     nav{
 
         display: flex;
@@ -350,4 +454,4 @@ z index*//
         right: 0;
         top: 0vh;
      
-    }*//
+    }*/
