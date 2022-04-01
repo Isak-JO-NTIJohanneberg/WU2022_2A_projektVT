@@ -58,7 +58,8 @@ grid-template-rows: 5rem 3rem 1fr;*/
         right: -150px;
         top: 9vw;
         transition: 0.35s;
-  
+       
+        z-index: 1;
         
     }
 
@@ -155,6 +156,50 @@ grid-template-rows: 5rem 3rem 1fr;*/
         font-size: 1.05rem;
     }
 
+
+    #main_tjanster{
+        grid-area: ma;
+        color: white;
+        background-image: url(../img/cnc-mill_skalad.png);
+        background-size: cover;
+    
+        display: grid;
+        grid-template-areas: 
+        "hr"  
+        "art1"
+        "dack-bild"
+        "pl"
+        ;
+        
+        grid-template-columns: 100%;
+        grid-template-rows: 2rem 0.25fr 1fr;
+        font-size: 1.05rem;
+    }
+
+    #mek-bild{
+        display: none;
+    }
+
+    #prislista{
+        grid-area: pl;
+    
+        display: grid;
+    
+        grid-template-areas:
+        "olja"
+        "dack"
+        "dack-rep"
+        "cykel-rep"
+        "kaffe"
+        "ovriga"
+        ;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    
+
 }   
 
 @media screen and (min-width: 801px){
@@ -186,6 +231,9 @@ grid-template-rows: 5rem 3rem 1fr;*/
         position: sticky;
 
         top: 0px;
+
+        z-index: 1;
+  
     
         /*
         height: 100px;
@@ -244,7 +292,80 @@ grid-template-rows: 5rem 3rem 1fr;*/
     
     }
 
+    #main_tjanster{
+
+        grid-area: ma;
+        color: white;
+        background-image: url(../img/cnc-mill_skalad.png);
+        background-size: cover;
+    
+        display: grid;
+    
+        grid-template-areas:
+        "hr hr hr" 
+        "mek-bild art1 dack-bild"
+        "pl pl pl"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2rem 35% 1fr;
+    
+        font-size: 1.05rem;
+    
+    }
+
+    #prislista{
+        grid-area: pl;
+    
+        display: grid;
+    
+        grid-template-areas:
+        "olja dack"
+        "dack-rep cykel-rep"
+        "kaffe ovriga"
+        ;
+    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+    }
+
+
+    
+
 }  
+
+#main_kontakt{
+
+    grid-area: ma;
+    color: white;
+    background-image: url(../img/cnc-mill_skalad.png);
+    background-size: cover;
+
+    display: grid;
+
+    grid-template-areas:
+    "hr"
+    "art1"
+    "karta"
+    "besok"
+    "art2"
+    "telefon"
+    "art3"
+    "telefon-nummer"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 6rem 0.8fr 0.05fr 0.05fr 0.05fr 0.05fr 0.05fr;
+
+    font-size: 1.05rem;
+
+
+}
+
+.centrerat{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
 
 h1{
     font-family: sans-serif;
@@ -331,6 +452,32 @@ height: 60vh;
     grid-area: kipphyvel;
 }
 
+#mek-bild{
+    grid-area: mek-bild;
+}
+
+#dack-bild{
+    grid-area: dack-bild;
+}
+
+.priser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 200px;
+
+    background-color: black;
+    opacity: 0.7;
+
+    margin: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    border-radius: 50px;
+
+}
+
 
 .lank{
    /* height: 50px;
@@ -401,6 +548,7 @@ footer{
     grid-area: hr;
     display: flex;
     justify-content: center;
+    font-size: 2rem;
 }
 
 

@@ -14,6 +14,8 @@ burger.addEventListener('click', toggleMenu)
 
 
 
+/*
+
 const undermeny = document.getElementById('undermeny')
 const maskiner = document.getElementById('maskiner')
 
@@ -23,3 +25,5 @@ function toggleMenu2() {
 }
 
 maskiner.addEventListener('mouseover', toggleMenu2)
+
+*/
