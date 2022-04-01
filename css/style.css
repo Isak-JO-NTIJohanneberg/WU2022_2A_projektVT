@@ -12,27 +12,27 @@ body{
 
 
 #wrapper{
-  
-display: grid;
+    
+    display: grid;
 
-grid-template-areas: 
-"lo bg"
-"na na"
-"ma ma"
-"fo fo"
-;
-height: 200vh;
-
-
-grid-template-rows: 8vw 4.5rem 1fr;
-grid-template-columns: 1fr 100px;
+    grid-template-areas: 
+    "lo bg"
+    "na na"
+    "ma ma"
+    "fo fo"
+    ;
+    height: 200vh;
 
 
-/*
-grid-template-rows: 5rem 3rem 1fr;*/
+    grid-template-rows: 8vw 4.5rem 1fr;
+    grid-template-columns: 1fr 100px;
 
 
-/*fel ordnig i height blir fel, kommentaren kunde visst inte vara i koden heller.*/
+    /*
+    grid-template-rows: 5rem 3rem 1fr;*/
+
+
+    /*fel ordnig i height blir fel, kommentaren kunde visst inte vara i koden heller.*/
 
 
 
@@ -117,7 +117,7 @@ grid-template-rows: 5rem 3rem 1fr;*/
     #main{
         grid-area: ma;
         color: white;
-        background-image: url(../img/cnc-mill_skalad.png);
+        background-image: url(../img/cnc-mill_bakgrund.jpg);
         background-size: cover;
     
         display: grid;
@@ -137,7 +137,7 @@ grid-template-rows: 5rem 3rem 1fr;*/
     #main_maskin{
         grid-area: ma;
         color: white;
-        background-image: url(../img/cnc-mill_skalad.png);
+        background-image: url(../img/cnc-mill_bakgrund.jpg);
         background-size: cover;
     
         display: grid;
@@ -160,7 +160,7 @@ grid-template-rows: 5rem 3rem 1fr;*/
     #main_tjanster{
         grid-area: ma;
         color: white;
-        background-image: url(../img/cnc-mill_skalad.png);
+        background-image: url(../img/cnc-mill_bakgrund.jpg);
         background-size: cover;
     
         display: grid;
@@ -198,6 +198,10 @@ grid-template-rows: 5rem 3rem 1fr;*/
         grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
+    #kartan-maps{
+        display: none;
+
+    }
     
 
 }   
@@ -253,7 +257,7 @@ grid-template-rows: 5rem 3rem 1fr;*/
 
         grid-area: ma;
         color: white;
-        background-image: url(../img/cnc-mill_skalad.png);
+        background-image: url(../img/cnc-mill_bakgrund.jpg);
         background-size: cover;
     
         display: grid;
@@ -274,7 +278,7 @@ grid-template-rows: 5rem 3rem 1fr;*/
 
         grid-area: ma;
         color: white;
-        background-image: url(../img/cnc-mill_skalad.png);
+        background-image: url(../img/cnc-mill_bakgrund.jpg);
         background-size: cover;
     
         display: grid;
@@ -296,7 +300,7 @@ grid-template-rows: 5rem 3rem 1fr;*/
 
         grid-area: ma;
         color: white;
-        background-image: url(../img/cnc-mill_skalad.png);
+        background-image: url(../img/cnc-mill_bakgrund.jpg);
         background-size: cover;
     
         display: grid;
@@ -329,6 +333,11 @@ grid-template-rows: 5rem 3rem 1fr;*/
     }
 
 
+    #kartan-maps_liten{
+        display: none;
+
+    }
+    
     
 
 }  
@@ -337,7 +346,7 @@ grid-template-rows: 5rem 3rem 1fr;*/
 
     grid-area: ma;
     color: white;
-    background-image: url(../img/cnc-mill_skalad.png);
+    background-image: url(../img/cnc-mill_bakgrund.jpg);
     background-size: cover;
 
     display: grid;
@@ -353,7 +362,7 @@ grid-template-rows: 5rem 3rem 1fr;*/
     "telefon-nummer"
     ;
     grid-template-columns: 1fr;
-    grid-template-rows: 3rem 6rem 0.8fr 0.05fr 0.05fr 0.05fr 0.05fr 0.05fr;
+    grid-template-rows: 3rem 7rem 0.8fr 0.05fr 0.05fr 0.05fr 0.05fr 0.05fr;
 
     font-size: 1.05rem;
 
@@ -415,15 +424,15 @@ h3{
 }
 
 .bilder_i_main{
-/*width: auto;
-height: 60vh;*/
-margin: 0px;
+    /*width: auto;
+    height: 60vh;*/
+    margin: 0px;
 
-object-fit: cover;
-/*width: fit-content;*/
-width: 100%;
-border-radius: 15px;  
-height: 60vh;
+    object-fit: cover;
+    /*width: fit-content;*/
+    width: 100%;
+    border-radius: 15px;  
+    height: 60vh;
 }
 
 .bildbehallare1{

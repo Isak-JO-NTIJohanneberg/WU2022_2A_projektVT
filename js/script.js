@@ -1,3 +1,4 @@
+
 const nav = document.getElementById('navmeny')
 const burger = document.getElementById('burgare')
 
@@ -10,6 +11,27 @@ burger.addEventListener('click', toggleMenu)
 
 
 //'mouseover'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

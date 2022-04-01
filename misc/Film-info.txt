@@ -1,0 +1,15 @@
+Ber om ursäkt för att filmen blev något lång, att gå igenom alla sidor och mobil-format tog lite längre rid än beräknat.
+
+Om du är mest intresserad av javascriptet kan du spola fram till 4:35
+
+Timestamps:
+
+Visar sidans struktur: 0:00
+
+Mobil-version: 1:52
+
+Mappstruktur: 2:42
+
+Överblick av Css och HTML: 3:45
+
+Javascript: 4:35
