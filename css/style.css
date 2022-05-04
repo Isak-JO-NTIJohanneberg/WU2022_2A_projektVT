@@ -512,15 +512,30 @@ h3{
 
 
 
-    font-weight: 850;
+   /* font-weight: 850;*/
     color: darkred;
+
+
+    text-shadow:
+    -0.4px 0px 0 darkred,
+    0.4px 0px 0 darkred;
+    
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+
+
 
 
    /* cursor: progress;*/
 }   
+/* transition fungerar inte på font weigt så jag gjorde en liknande variant av en lösning jag läste på stack overflow.*/
+
 
 .lank:hover{
 background-color: seashell;
+transition: 0.3s;
 
 }
 
@@ -531,6 +546,9 @@ background-color: seashell;
     font-family: sans-serif;
     font-weight: 700;
     color: darkblue;
+    letter-spacing: 0.05rem;
+ 
+    
 }
 
 footer{
@@ -581,9 +599,7 @@ p{
 }
 
 
-a{
-   
-}
+
 
 /* cursor på länkar*/
 
