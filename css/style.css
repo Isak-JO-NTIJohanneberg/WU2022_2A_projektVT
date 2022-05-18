@@ -205,6 +205,71 @@ body{
         display: none;
 
     }
+
+    .priser{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        height: 200px;
+        /*width: 65vw;*/
+
+        width:60%;
+     
+    
+        background-color: black;
+        opacity: 0.7;
+        
+        margin: 50px;
+    
+        /*
+        margin-right: 150px;
+        margin-left: 150px;
+         */
+        border-radius: 50px;
+       
+    }
+
+    
+    #kontakt-behallare{
+
+        display: grid;
+
+        grid-template-areas: 
+        "kontaktupg" 
+        "vi_som_jobbar"
+        ;
+
+
+        grid-template-columns:1fr;
+
+        grid-template-rows: max-content 1fr;
+
+
+    }
+
+        
+    .vi_jobbar{
+
+        border-radius: 50px;
+        
+        width: 75%;
+
+        
+        
+        
+        
+    }
+
+    #vi_som_jobbar{
+        display: flex;
+        flex-direction: column;
+
+        
+        margin-left: 5vw;
+        
+        }
     
 
 }   
@@ -341,6 +406,63 @@ body{
         display: none;
 
     }
+
+    .priser{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        height: 200px;
+        width: 25vw;
+     
+    
+        background-color: black;
+        opacity: 0.7;
+        
+        margin: 50px;
+    
+        /*
+        margin-right: 150px;
+        margin-left: 150px;
+         */
+        border-radius: 50px;
+       
+    }
+
+    #kontakt-behallare{
+
+        display: grid;
+
+        grid-template-areas: 
+        "kontaktupg" "vi_som_jobbar"
+        ;
+
+
+        grid-template-columns:65% 1fr;
+
+        grid-template-rows: 1fr;
+
+
+    }
+
+        
+    .vi_jobbar{
+
+        border-radius: 50px;
+        
+        width: 30vw;
+        
+        
+        
+        
+    }
+
+    #vi_som_jobbar{
+        display: flex;
+        flex-direction: column;
+        
+        }
     
     
 
@@ -359,13 +481,11 @@ body{
     "hr"
     "art1"
     "karta"
-    "besok"
-    "telefon"
-    "art3"
-    "telefon-nummer"
+    "kontakt-behallare"
     ;
     grid-template-columns: 1fr;
-    grid-template-rows: 3rem 7rem 0.8fr 0.05fr 0.05fr 0.05fr 0.05fr 0.05fr;
+    /*grid-template-rows: 3rem 7rem 0.8fr 0.05fr;*/
+    /*grid-template-rows: 3rem 7rem 450px 1fr;*/
 
     font-size: 1.05rem;
    
@@ -390,7 +510,8 @@ body{
     border: 0px;
     padding: 0px;
 
-    margin-left: 10vw;
+    margin-left: 5vw;
+    margin-right: 30px;
     
 
 }
@@ -406,7 +527,8 @@ font-size: 1.1rem;
     border: 0px;
     padding: 0px;
 
-    margin-left: 10vw;
+    margin-left: 5vw;
+    margin-right: 30px;
 
 }
 
@@ -510,28 +632,7 @@ h3{
     grid-area: dack-bild;
 }
 
-.priser{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    height: 200px;
-    width: 25vw;
- 
-
-    background-color: black;
-    opacity: 0.7;
-    
-    margin: 50px;
-
-    /*
-    margin-right: 150px;
-    margin-left: 150px;
-     */
-    border-radius: 50px;
-   
-}
 
 
 .prisbehallare{
@@ -571,6 +672,7 @@ h3{
    /* font-weight: 850;*/
     color: darkred;
 
+    font-size: 1.1rem;
 
     text-shadow:
     -0.4px 0px 0 darkred,
@@ -634,6 +736,17 @@ footer{
     font-size: 2rem;
 }
 
+
+
+
+.bolder{
+    font-weight: 600;
+    line-height: 0;
+}
+
+.nummer{
+    line-height: 0;
+}
 
 /*
 .link{
