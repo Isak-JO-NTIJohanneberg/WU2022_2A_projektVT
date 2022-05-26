@@ -489,7 +489,7 @@ body{
     "kontakt-behallare"
     ;
     grid-template-columns: 1fr;
-    grid-template-rows: 2rem 8rem 450px 1fr;
+    grid-template-rows: 2rem 10rem 450px 1fr;
     /*grid-template-rows: 3rem 7rem 0.8fr 0.05fr;*/
     /*grid-template-rows: 3rem 7rem 450px 1fr;*/
 
@@ -526,7 +526,7 @@ body{
 
 }
 
-#oppet{
+.oppet{
 line-height: 0;
 font-size: 1.4rem;
 
